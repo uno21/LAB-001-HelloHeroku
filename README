@@ -1,0 +1,21 @@
+Instrucciones para Heroku, command-line de linux
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+sudo apt-get install heroku-toolbelt 
+
+sudo apt-get install ruby
+heroku login
+	set up mail
+	set up password on heroku
+
+cd HelloHeroku/
+mvn install
+
+git init
+git add .
+git commit -a -m "Commit inicial"
+heroku create --stack cedar
+git remote rm heroku
+git remote add heroku git@heroku.com:uno21-helloheroku.git
+git push heroku master
+
